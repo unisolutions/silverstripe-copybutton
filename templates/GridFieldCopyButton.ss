@@ -1,0 +1,1 @@
+<a class="action action-detail copy-link" href="$Link" title="<% _t('COPY', 'Copy') %>"><% _t('COPY', 'Copy') %></a>

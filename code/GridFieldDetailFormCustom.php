@@ -13,9 +13,8 @@ class GridFieldDetailFormCustom extends GridFieldDetailForm {
 class GridFieldDetailFormCustom_ItemRequest extends GridFieldDetailForm_ItemRequest {
 
 	function copy($request) {
-		// TODO: we need to redirrect to the edit action, because refreshing window with copy action leaved will create new a record at the database.
 		$this->record = $this->record->duplicate();
-		return parent::edit($request);
+		return Controller::curr()->redirect($this->Link('edit'));
 	}
 
 }

@@ -38,3 +38,17 @@ override getEditForm() method like this:
 
 		return $form;
 	}
+
+
+This action will make exact copy of the record (with all relations and etc.).
+Sometimes you will need to do some actions just after copy operation (i.e.
+you'll need to remove some relations). It is easily achieved by extending
+DataObject and writing all the actions in the onAfterDuplicate() method.
+
+	class SomeObjectExtension extends DataExtension {
+
+		public function onAfterDuplicate() {
+			DB::query("delete from Member_SomeObject where SomeObjectID = ".$this->owner->ID);
+		}
+
+	}

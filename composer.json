@@ -1,0 +1,12 @@
+{
+        "name": "uniun/silverstripe-copybutton",
+        "type": "silverstripe-module",
+        "description": "Adds copy button to the GridField",
+        "require": {
+                "php": ">=5.3.2",
+                "silverstripe/cms": "*",
+                "silverstripe/framework": "*"
+        },
+        "minimum-stability": "dev"
+}
+

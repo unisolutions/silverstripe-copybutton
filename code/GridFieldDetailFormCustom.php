@@ -12,6 +12,10 @@ class GridFieldDetailFormCustom extends GridFieldDetailForm {
 
 class GridFieldDetailFormCustom_ItemRequest extends GridFieldDetailForm_ItemRequest {
 
+	private static $allowed_actions = array(
+		'copy',
+	);
+
 	function copy($request) {
 		$this->record = $this->record->duplicate();
 		return Controller::curr()->redirect($this->Link('edit'));

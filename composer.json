@@ -10,5 +10,8 @@
 	"require": {
 		"silverstripe/framework": "3.*"
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
+	"extra": {
+		"installer-name": "copybutton"
+	}
 }

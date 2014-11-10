@@ -24,10 +24,10 @@ class GridFieldDetailFormCustom_ItemRequest extends GridFieldDetailForm_ItemRequ
 			user_error("Error Duplicating!",
 				E_USER_ERROR);
 		}
-		if ($current_record->many_many()) foreach($current_record->many_many() as $name => $type) {
-			//many_many include belongs_many_many
-			$this->duplicateRelations($current_record, $clone, $name);
-		}
+//		if ($current_record->many_many()) foreach($current_record->many_many() as $name => $type) {
+//			//many_many include belongs_many_many
+//			$this->duplicateRelations($current_record, $clone, $name);
+//		}
 	
 		return Controller::curr()->redirect($this->Link('edit'));
 	}

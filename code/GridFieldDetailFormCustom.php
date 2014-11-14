@@ -19,11 +19,11 @@ class GridFieldDetailFormCustom_ItemRequest extends GridFieldDetailForm_ItemRequ
 	function copy($request) {
 		$current_record = $this->record;
 		$clone = $this->record->duplicate();
+		$this->record = $clone;
 		if (!$clone || $clone->ID < 1) {
 			user_error("Error Duplicating!",
 				E_USER_ERROR);
 		}
-
 		return Controller::curr()->redirect($this->Link('edit'));
 	}
 

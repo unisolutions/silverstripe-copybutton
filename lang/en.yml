@@ -1,3 +1,4 @@
 en:
-  GridFieldCopyButton.ss:
-    COPY: 'Copy'
+  GridAction:
+    COPY_DESCRIPTION: 'Copy'
+    Copy: 'Copy'

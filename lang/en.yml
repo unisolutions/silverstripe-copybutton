@@ -2,3 +2,6 @@ en:
   GridAction:
     COPY_DESCRIPTION: 'Copy'
     Copy: 'Copy'
+
+  GridFieldAction_Copy:
+    CreatePermissionsFailure: 'No create permissions'

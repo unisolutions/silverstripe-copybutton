@@ -48,7 +48,7 @@ class GridFieldCopyButton implements GridField_ColumnProvider, GridField_ActionP
 		if($actionName == 'copyrecord'){
 			$item = $gridField->getList()->byID($arguments['RecordID']);
 			if(!$item) return;
-			
+
 			if(!$item->canCreate()) {
 				throw new ValidationException(
 					_t('GridFieldAction_Copy.CreatePermissionsFailure',"No create permissions"),0);
@@ -58,7 +58,7 @@ class GridFieldCopyButton implements GridField_ColumnProvider, GridField_ActionP
 			if (!$clone || $clone->ID < 1) {
 				user_error("Error Duplicating!", E_USER_ERROR);
 			}
-		} 
+		}
 	}
 
 }

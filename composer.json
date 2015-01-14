@@ -8,7 +8,7 @@
 		"email": "elvinas@unisolutions.eu"
 	}],
 	"require": {
-		"silverstripe/framework": "3.*"
+		"silverstripe/framework": "3.0.*"
 	},
 	"minimum-stability": "dev",
 	"extra": {

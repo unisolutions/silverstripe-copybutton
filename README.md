@@ -27,11 +27,7 @@ override getEditForm() method like this:
 			->Fields()
 			->fieldByName($this->sanitiseClassName($this->modelClass))
 			->getConfig()
-			->removeComponentsByType('GridFieldEditButton')
-			->removeComponentsByType('GridFieldDeleteAction')
-			->addComponent(new GridFieldCopyButton())
-			->addComponent(new GridFieldEditButton())
-			->addComponent(new GridFieldDeleteAction())
+			->addComponent(new GridFieldCopyButton(), 'GridFieldEditButton') // or just ->addComponent(new GridFieldCopyButton())
 		;
 
 		return $form;

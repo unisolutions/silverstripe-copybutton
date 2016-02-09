@@ -1,0 +1,7 @@
+fi:
+  GridAction:
+    COPY_DESCRIPTION: 'Kopioi'
+    Copy: 'Kopioi'
+
+  GridFieldAction_Copy:
+    CreatePermissionsFailure: 'Ei luontioikeutta'

@@ -2,6 +2,7 @@
 	"name": "unisolutions/silverstripe-copybutton",
 	"type": "silverstripe-module",
 	"description": "Adds copy button to the GridField.",
+	"license": "BSD-3-Clause",
 	"keywords": ["silverstripe", "copy", "button"],
 	"authors": [{
 		"name": "Elvinas Liutkevičius",

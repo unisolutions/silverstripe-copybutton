@@ -1,6 +1,7 @@
 {
     "name": "dhensby/silverstripe-copybutton",
     "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
     "description": "Adds copy button to the GridField.",
     "keywords": [
         "silverstripe",

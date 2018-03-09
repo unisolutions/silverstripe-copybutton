@@ -1,4 +1,13 @@
 <?php
+
+namespace Unisolutions\GridField;
+
+use SilverStripe\Forms\GridField\GridField_ColumnProvider;
+use SilverStripe\Forms\GridField\GridField_ActionProvider;
+use SilverStripe\Forms\GridField\GridField_FormAction;
+use SilverStripe\Forms\GridField\GridField;
+use SilverStripe\ORM\ValidationException;
+
 /**
  * This component provides a button for copying record.
  * First of all it dublicates record and then opens opens edit form {@link GridFieldDetailForm}.
@@ -8,7 +17,7 @@
  * @author Elvinas Liutkevičius <elvinas@unisolutions.eu>
  * @license BSD http://silverstripe.org/BSD-license
  */
-class GridFieldCopyButton implements GridField_ColumnProvider, GridField_ActionProvider
+class CopyButton implements GridField_ColumnProvider, GridField_ActionProvider
 {
 
     public function augmentColumns($gridField, &$columns)
@@ -57,6 +66,7 @@ class GridFieldCopyButton implements GridField_ColumnProvider, GridField_ActionP
     public function handleAction(GridField $gridField, $actionName, $arguments, $data)
     {
         if ($actionName == 'copyrecord') {
+            /** @var \SilverStripe\ORM\DataObject $item */
             $item = $gridField->getList()->byID($arguments['RecordID']);
             if (!$item) {
                 return;

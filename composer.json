@@ -1,17 +1,39 @@
 {
-	"name": "unisolutions/silverstripe-copybutton",
-	"type": "silverstripe-module",
-	"description": "Adds copy button to the GridField.",
-	"keywords": ["silverstripe", "copy", "button"],
-	"authors": [{
-		"name": "Elvinas Liutkevičius",
-		"email": "elvinas@unisolutions.eu"
-	}],
-	"require": {
-		"silverstripe/framework": "3.*"
-	},
-	"minimum-stability": "dev",
-	"extra": {
-		"installer-name": "copybutton"
-	}
+    "name": "dhensby/silverstripe-copybutton",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "description": "Adds copy button to the GridField.",
+    "keywords": [
+        "silverstripe",
+        "copy",
+        "button"
+    ],
+    "authors": [
+        {
+            "name": "Elvinas Liutkevičius",
+            "email": "elvinas@unisolutions.eu"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Unisolutions\\": "code/"
+        }
+    },
+    "replace": {
+        "unisolutions/silverstripe-copybutton": "self.version"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "expose": [
+            "css",
+            "images"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

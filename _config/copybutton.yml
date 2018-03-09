@@ -1,0 +1,6 @@
+---
+Name: copybutton
+---
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - "unisolutions/silverstripe-copybutton:css/GridFieldCopyButton.css"
